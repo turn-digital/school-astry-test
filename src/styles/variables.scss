@@ -1,0 +1,41 @@
+:root {
+  --color-primary: #387621;
+  --color-secondary: #387621;
+  --color-secondary-hover: #2f6819;
+  --color-tertiary: #0a303a;
+  --color-bg-1: #fbf5f1;
+}
+
+$color-primary: var(--color-primary);
+$color-secondary: var(--color-secondary);
+$color-secondary-hover: var(--color-secondary-hover);
+$color-tertiary: var(--color-tertiary);
+
+$color-text: $color-tertiary;
+$color-text-hover: $color-secondary-hover;
+$color-text-white: #ffffff;
+$color-text-1: $color-secondary;
+$color-text-2: #64696a;
+$color-text-3: #717171;
+$color-text-4: #042417;
+$color-text-disabled: #666666;
+
+$color-bg-tertiary: $color-tertiary;
+$color-bg-snow: #ffffff;
+$color-bg-light: #f9f9f9;
+$color-bg-1: var(--color-bg-1);
+$color-bg-display-clock: #014A88;
+
+$color-border-tertiary: $color-tertiary;
+$color-border-secondary-hover: $color-secondary-hover;
+$color-border-snow: #ffffff;
+$color-border-stone: #dfdfde;
+
+$color-soc-icon--fb: #3b5998;
+$color-soc-icon--insta: #c13584;
+$color-soc-icon--yt: red;
+$color-soc-icon--in: #2867b2;
+
+$grid-column-gap: 30px;
+$grid-row-gap: 16px;
+$grid-row-2x-gap: 30px;

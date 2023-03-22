@@ -1,0 +1,16 @@
+@custom-media --mobileL (min-width: 576px);
+@custom-media --tablet (min-width: 768px);
+@custom-media --laptopS (min-width: 992px);
+@custom-media --laptop (min-width: 1200px);
+//@custom-media --4k (min-width: 2560px);
+
+// -------------- Examples --------------
+
+//@media (--mobileL) {} = sm
+//@media (--tablet) {} = md
+//@media (--laptopS) {} = lg
+//@media (--laptop) {} = xl
+//@media (--4k){}
+
+// change gutter width depends to design
+//@lost gutter 8px;

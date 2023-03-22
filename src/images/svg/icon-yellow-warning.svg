@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="91px" height="91px" viewBox="0 0 91 91" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Organization / Status / warning--filled / 32</title>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fillRule="evenodd">
+        <g id="paziņojums" transform="translate(-794.000000, -119.000000)">
+            <g id="Organization-/-Status-/-warning--filled-/-32" transform="translate(794.000000, 119.000000)">
+                <path d="M45.5,0 C20.475,0 0,20.475 0,45.5 C0,70.525 20.475,91 45.5,91 C70.525,91 91,70.525 91,45.5 C91,20.475 70.525,0 45.5,0 Z M41.925,19.5 L49.075,19.5 L49.075,55.25 L41.925,55.25 L41.925,19.5 L41.925,19.5 Z M45.5,74.75 C42.9,74.75 40.625,72.475 40.625,69.875 C40.625,67.275 42.9,65 45.5,65 C48.1,65 50.375,67.275 50.375,69.875 C50.375,72.475 48.1,74.75 45.5,74.75 Z" id="Fill" fill="#FFDB00"></path>
+                <path d="M51,69.1470588 C51,71.7352941 48.6666667,74 46,74 C43.3333333,74 41,71.7352941 41,69.1470588 C41,66.5588235 43.3333333,64.2941176 46,64.2941176 C48.6666667,64.2941176 51,66.5588235 51,69.1470588 Z M49.6666667,19 L42.3333333,19 L42.3333333,54.5882353 L49.6666667,54.5882353 L49.6666667,19 Z" id="Inner-Fill" fill="#0A303A"></path>
+            </g>
+        </g>
+    </g>
+</svg>

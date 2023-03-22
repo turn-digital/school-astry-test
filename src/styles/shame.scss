@@ -1,0 +1,134 @@
+html {
+  scroll-behavior: smooth; // foor smooth scrolling
+  overflow-x: hidden;
+
+  &.is-opened {
+    overflow: hidden;
+  }
+}
+
+body {
+  overflow-x: hidden;
+  color: $color-text;
+  font-family: $font-primary;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+a {
+  @include transition-fast;
+  outline: none;
+  text-decoration: none;
+}
+
+// avoid from image blur in chrome
+img {
+  image-rendering: -webkit-optimize-contrast;
+}
+
+.wrapper {
+  @include container;
+}
+
+.site {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  main {
+    flex: 1;
+  }
+}
+
+.divider {
+  width: 100%;
+  display: block;
+  border-top: 1px solid $color-border-stone;
+}
+
+.flexblock {
+  &__section {
+    margin-top: 60px;
+
+    &--card-person {
+      .divider {
+        display: none;
+      }
+
+      & + .flexblock__section--card-person {
+        .divider {
+          margin-top: 60px;
+          display: block;
+        }
+      }
+    }
+
+    &--program-list {
+      & + .flexblock__section--program-list {
+        margin-top: 54px;
+
+        .wrapper {
+          padding-top: 32px;
+          border-top: 1px solid $color-border-stone;
+        }
+      }
+    }
+  }
+
+  &__subtitle {
+    padding: 32px 0 26px;
+    font-size: 22px;
+    font-weight: 900;
+    line-height: 24px;
+  }
+
+  &__persons {
+    &.col {
+      grid-row-gap: $grid-row-2x-gap;
+    }
+  }
+
+  @include size-md {
+    &__section {
+      margin-top: 100px;
+
+      &--card-person {
+        & + .flexblock__section--card-person {
+          .divider {
+            margin-top: 80px;
+          }
+        }
+      }
+
+      &--program-list {
+        & + .flexblock__section--program-list {
+          margin-top: 62px;
+        }
+      }
+    }
+  }
+}
+
+.col {
+  display: grid;
+  grid-column-gap: $grid-column-gap;
+  grid-row-gap: $grid-row-gap;
+  grid-template-columns: 1fr;
+
+  @include size-md {
+    &--2,
+    &--3 {
+      grid-template-columns: 1fr 1fr;
+    }
+  }
+
+  @include size-lg {
+    &--3 {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+}

@@ -1,0 +1,65 @@
+$screen-sm: 320px;
+$screen-md: 768px;
+$screen-mdx: 1024px;
+$screen-lg: 1240px;
+$screen-xlg: 1440px;
+
+@mixin size-sm {
+  @media (min-width: $screen-sm) {
+    @content;
+  }
+}
+
+@mixin size-md {
+  @media (min-width: $screen-md) {
+    @content;
+  }
+}
+
+@mixin size-mdx {
+  @media (min-width: $screen-mdx) {
+    @content;
+  }
+}
+
+@mixin size-lg {
+  @media (min-width: $screen-lg) {
+    @content;
+  }
+}
+
+@mixin size-xlg {
+  @media (min-width: $screen-xlg) {
+    @content;
+  }
+}
+
+@mixin container {
+  position: relative;
+  margin: 0 auto;
+  max-width: 92%;
+
+  @include size-md {
+    max-width: 96%;
+  }
+
+  @include size-lg {
+    max-width: 1200px;
+  }
+}
+
+@mixin transition-fast() {
+  transition: all 150ms ease;
+}
+
+@mixin transition-medium() {
+  transition: all 350ms ease;
+}
+
+@mixin position-absolute {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
