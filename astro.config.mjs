@@ -6,5 +6,5 @@ import preact from "@astrojs/preact";
 export default defineConfig({
   site: "https://turn-digital.github.io",
   base: "/school-astry-test",
-  integrations: [preact()]
+  integrations: [preact()],
 });
