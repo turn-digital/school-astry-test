@@ -1,0 +1,265 @@
+@import "../../styles/reset.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/grid-settings.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/fonts.scss";
+@import "../../styles/shame.scss";
+
+.hero {
+  position: relative;
+  padding-top: 12px;
+
+  &__col {
+    position: relative;
+
+    &:nth-of-type(2) {
+      padding-top: 62px;
+    }
+  }
+
+  &__logo {
+    position: absolute;
+    bottom: -50px;
+    left: 16px;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+
+    img {
+      position: relative;
+      z-index: 1;
+      width: 60px;
+      height: 60px;
+      display: inline-block;
+      // border: 10px solid $color-border-snow;
+      border-radius: 50%;
+    }
+
+    &-back {
+      position: absolute;
+      top: -10px;
+      left: 0;
+      width: 80px;
+      height: 80px;
+      display: inline-block;
+      border-radius: 50%;
+      background-color: $color-border-snow;
+    }
+  }
+
+  &__bg {
+    display: none;
+    background-image: url("../../images/makslasskola.ventspils.lv-ln.jpg");
+  }
+
+  &__image {
+    width: 100%;
+    border-radius: 8px;
+    display: block;
+  }
+
+  &__title {
+    position: relative;
+    margin-top: 32px; //ozolnieki
+    padding-top: 12px;
+    font-size: 34px;
+    font-weight: 900;
+    line-height: 44px;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 45px;
+      height: 3px;
+      display: block;
+      background-color: $color-primary;
+      content: "";
+    }
+  }
+
+  &__desc {
+    //   margin-top: 16px;
+    margin-top: 30px; //ozolnieki
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  &__more {
+    margin-top: 20px;
+  }
+
+  &__col {
+    //ozolnieki
+    &:nth-of-type(2) {
+      margin-top: 24px;
+      padding-top: 0;
+    }
+  }
+
+  &__links {
+    //   margin-top: 40px;
+    //   padding: 52px 0;
+    //   background-color: $color-bg-light;
+    //ozolnieki START
+    margin-top: 0;
+    padding: 36px 40px 40px;
+    border-radius: 8px;
+    background-color: $color-bg-snow;
+    box-shadow: 0 4px 18px -6px rgba(102, 86, 82, 0.2);
+    //ozolnieki END
+    .quick-links {
+      padding: 0;
+    }
+  }
+
+  @include size-md {
+    //   display: flex;
+    display: block; //ozolnieki
+
+    &__col {
+      position: static;
+    }
+
+    &__bg {
+      // width: 50%;
+      display: block;
+      //ozolnieki START
+      position: relative;
+      margin: 0 auto;
+      width: 96%;
+      width: calc(100% - 32px);
+      height: 260px;
+      overflow: hidden;
+      border-radius: 12px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      img {
+        position: absolute;
+        left: -9999px;
+        opacity: 0;
+      }
+      //ozolnieki END
+    }
+
+    &__image {
+      display: none;
+    }
+
+    &__logo {
+      top: 46px;
+      left: 50%;
+      bottom: inherit;
+      width: 100px;
+      height: 100px;
+      transform: translateX(-50%);
+
+      &-back {
+        width: 100px;
+        height: 100px;
+      }
+
+      img {
+        width: 80px;
+        height: 80px;
+      }
+    }
+
+    &__col {
+      &:nth-of-type(2) {
+        //   padding: 40px 0;
+        //   padding-left: 74px;
+        padding: 0; //ozolnieki
+      }
+    }
+
+    &__content {
+      padding-right: 5%;
+    }
+
+    //   & > .wrapper {
+    //     position: static;
+    //     max-width: inherit;
+    //     width: 50%;
+    //     display: flex;
+    //     align-items: center;
+    //   }
+    & > .wrapper {
+      //ozolnieki
+      @include container;
+      margin-top: 0;
+      width: auto;
+      display: block;
+    }
+
+    &__links {
+      .quick-links {
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+    }
+  }
+
+  @include size-lg {
+    &__logo {
+      width: 126px;
+      height: 126px;
+
+      &-back {
+        width: 126px;
+        height: 126px;
+      }
+
+      img {
+        width: 106px;
+        height: 106px;
+      }
+    }
+
+    &__col {
+      &:nth-of-type(2) {
+        padding-left: 100px;
+      }
+    }
+
+    &__title {
+      margin-top: 80px; //ozolnieki
+      margin-bottom: 44px;
+      font-size: 38px;
+      line-height: 48px;
+    }
+
+    &__content {
+      padding-right: 0;
+      max-width: 500px;
+    }
+
+    .wrapper {
+      grid-template-columns: 7fr 5fr;
+    }
+
+    //ozolnieki START
+    &__col {
+      &:nth-of-type(1) {
+        padding-right: 300px;
+      }
+
+      &:nth-of-type(2) {
+        margin-top: -90px;
+        padding: 0; //ozolnieki
+      }
+    }
+
+    &__links {
+      max-width: 296px;
+    }
+
+    & > .wrapper {
+      display: grid;
+      grid-template-columns: 9fr 3fr;
+      grid-column-gap: $grid-column-gap;
+    }
+    //ozolnieki END
+  }
+}

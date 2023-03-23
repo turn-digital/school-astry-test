@@ -10,7 +10,10 @@
     "astro": "astro"
   },
   "dependencies": {
+    "@astrojs/preact": "^2.1.0",
     "astro": "^2.1.5",
+    "firebase": "^9.18.0",
+    "preact": "^10.13.1",
     "sass": "^1.59.3"
   }
 }

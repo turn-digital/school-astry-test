@@ -6,12 +6,12 @@
 @import "./fonts.scss";
 @import "./shame.scss";
 
-// @import "../../components/footer/footer";
+@import "../components/footer/footer.scss";
 @import "../components/header/header.scss";
-// @import "../../components/hero/hero";
-// @import "../../components/link/link";
-// @import "../../components/quickLinks/quickLinks";
-// @import "../../components/card-article/card-article";
-// @import "../../components/card-event/card-event";
-// @import "../../components/button/button";
-// @import "../../components/contactForm/contactsForm";
+@import "../components/hero/hero.scss";
+@import "../components/link/link.scss";
+@import "../components/quickLinks/quickLinks.scss";
+@import "../components/card-article/card-article.scss";
+@import "../components/card-event/card-event.scss";
+@import "../components/button/button.scss";
+@import "../components/contactForm/contactForm.scss";

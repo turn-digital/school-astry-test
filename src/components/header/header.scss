@@ -4,6 +4,7 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/fonts.scss";
 @import "../../styles/shame.scss";
+
 .header {
   position: relative;
   z-index: 100;
@@ -214,7 +215,7 @@
         &:after {
           @include position-absolute;
           @include transition-fast;
-          background-image: url("../../../images/svg/icon-chevron-right.svg");
+          background-image: url("../../images/svg/icon-chevron-right.svg");
           background-position: center;
           background-repeat: no-repeat;
           background-size: 12px;

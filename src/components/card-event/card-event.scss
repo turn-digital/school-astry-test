@@ -1,0 +1,150 @@
+@import "../../styles/reset.scss";
+@import "../../styles/variables.scss";
+@import "../../styles/grid-settings.scss";
+@import "../../styles/mixins.scss";
+@import "../../styles/fonts.scss";
+@import "../../styles/shame.scss";
+
+.card-event {
+  position: relative;
+  display: flex;
+  border: 1px solid $color-border-stone;
+  border-radius: 8px;
+  background-color: $color-bg-snow;
+
+  &__link {
+    @include position-absolute;
+    @include transition-fast;
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+
+    &:hover {
+      box-shadow: 2px 4px 18px 0 rgba(0, 0, 0, 0.06);
+    }
+  }
+
+  &__info {
+    position: relative;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 24px;
+    text-align: right;
+
+    &-point {
+      position: relative;
+      top: 4px;
+      margin-right: 10px;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      background-color: rgba(0, 135, 82, 0.17);
+
+      &:before {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 8px;
+        height: 8px;
+        display: inline-block;
+        border-radius: 50%;
+        background-color: #008752;
+        content: "";
+        transform: translate(-50%, -50%);
+      }
+    }
+  }
+
+  &__date {
+    position: relative;
+    padding: 24px 0;
+    width: 90px;
+    overflow: hidden;
+    display: flex;
+    border-radius: 8px 0 0 8px;
+    border-right: 1px solid $color-border-stone;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+
+    &:before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 4px;
+      height: 100%;
+      background-color: $color-primary;
+      content: "";
+    }
+
+    span {
+      display: block;
+      text-align: center;
+
+      &:nth-of-type(1) {
+        font-size: 32px;
+        font-weight: 900;
+        line-height: 40px;
+      }
+
+      &:nth-of-type(2) {
+        font-size: 12px;
+        line-height: 18px;
+      }
+    }
+  }
+
+  &__content {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 26px;
+
+    & + p,
+    & + a {
+      margin-top: 14px;
+    }
+  }
+
+  &__duration {
+    margin-bottom: 8px;
+    color: $color-text-3;
+    font-size: 14px;
+    line-height: 18px;
+
+    svg {
+      position: relative;
+      top: 1px;
+      margin-right: 6px;
+
+      path {
+        fill: $color-text-3;
+      }
+    }
+  }
+
+  & + .card-event {
+    margin-top: 12px;
+  }
+
+  .link {
+    color: $color-text;
+
+    svg path {
+      @include transition-fast;
+      fill: $color-text;
+    }
+
+    &:hover {
+      svg path {
+        fill: $color-secondary-hover;
+      }
+    }
+  }
+}

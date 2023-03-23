@@ -1,11 +1,21 @@
 ---
-import Header from "../components/header/Header.astro";
+import Header from "../components/header/Header.jsx";
+import Footer from "../components/footer/Footer.jsx";
+import Hero from "../components/hero/Hero.jsx";
+import News from "../components/news/News.jsx";
 ---
 
 <main>
-  <Header />
+  <div class="home page__flexblock">
+    <Header />
+    <section class="home__section home__section--hero">
+      <Hero />
+    </section>
+    <News />
+    <Footer />
+  </div>
 </main>
 
 <style lang="scss">
-  @import "../styles/index.scss";
+  @import "../styles/style.scss";
 </style>
