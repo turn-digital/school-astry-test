@@ -10,7 +10,7 @@ const Footer = () => {
           <p className="footer__desc">
             <a
               className="footer__menu-link"
-              href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+              href={"/school-astry-test/contact"}
               title="Jelgavas iela 35, Ozolnieki, Jelgavas novads, LV-3018"
               target="_blank"
               rel="noreferrer"
@@ -24,7 +24,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-home current-menu-item page_item page-item-7 current_page_item menu-item-29">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Sākumlapa"
                 >
                   <span>Sākumlapa</span>
@@ -33,7 +33,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-368 menu-item-has-children">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Uzņemšana"
                 >
                   <span>Uzņemšana</span>
@@ -42,7 +42,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-192 menu-item-has-children">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Par skolu"
                 >
                   <span>Par skolu</span>
@@ -51,7 +51,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-custom menu-item-object-custom menu-item-3316 menu-item-has-children">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Projekti"
                 >
                   <span>Projekti</span>
@@ -60,7 +60,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-28 menu-item-has-children">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Kontakti"
                 >
                   <span>Kontakti</span>
@@ -72,7 +72,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-1839">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Stundu izmaiņas"
                 >
                   <span>Stundu izmaiņas</span>
@@ -81,7 +81,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-custom menu-item-object-custom menu-item-1855">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Stundu saraksts"
                 >
                   <span>Stundu saraksts</span>
@@ -90,7 +90,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-custom menu-item-object-custom menu-item-4056">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Konsultāciju grafiks"
                 >
                   <span>Konsultāciju grafiks</span>
@@ -99,7 +99,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-1840">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Dokumenti"
                 >
                   <span>Dokumenti</span>
@@ -108,7 +108,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-custom menu-item-object-custom menu-item-4249">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Bibliotēkas katalogs"
                 >
                   <span>Bibliotēkas katalogs</span>
@@ -117,7 +117,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-1600">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Mūsu vide"
                 >
                   <span>Mūsu vide</span>
@@ -126,7 +126,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-1599">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Telpu noma"
                 >
                   <span>Telpu noma</span>
@@ -146,7 +146,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-1601">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Saites"
                 >
                   <span>Saites</span>
@@ -159,7 +159,7 @@ const Footer = () => {
             <ul className="footer__menu footer__menu--privacy">
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-4192">
                 <a
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Piekļūstamības paziņojums"
                   className="link link--space-sm"
                 >
@@ -168,7 +168,7 @@ const Footer = () => {
               </li>
               <li className="footer__menu-item  menu-item menu-item-type-post_type menu-item-object-page menu-item-privacy-policy menu-item-4193">
                 <a
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Privātuma politika"
                   className="link link--space-sm"
                 >
@@ -181,7 +181,7 @@ const Footer = () => {
               <li className="footer__menu-item  menu-item menu-item-type-custom menu-item-object-custom menu-item-193">
                 <a
                   className="footer__menu-link"
-                  href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                  href={"/school-astry-test/contact"}
                   title="Facebook"
                   target="_blank"
                   rel="noreferrer"
@@ -204,7 +204,7 @@ const Footer = () => {
         <p className="footer__copy">
           <strong>
             <a
-              href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+              href={"/school-astry-test/contact"}
               target="_blank"
               rel="noreferrer"
             >

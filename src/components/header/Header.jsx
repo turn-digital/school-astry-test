@@ -9,7 +9,7 @@ const Header = () => {
           <div className="header__content">
             <h1 className="header__title">
               <a
-                href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                href={"/school-astry-test/contact"}
                 title="Ventspils Mākslas skola"
                 className="link link--invert"
               >
@@ -25,7 +25,7 @@ const Header = () => {
                 >
                   <a
                     className="header__menu-link menu-link"
-                    href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                    href={"/school-astry-test/contact"}
                     title="Sākumlapa"
                   >
                     <span>Sākumlapa</span>
@@ -37,7 +37,7 @@ const Header = () => {
                 >
                   <a
                     className="header__menu-link menu-link"
-                    href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                    href={"/school-astry-test/contact"}
                     title="Uzņemšana"
                   >
                     <span>Uzņemšana</span>
@@ -54,7 +54,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2475 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         Uzņemšanas kārtība
                       </a>
@@ -67,7 +67,7 @@ const Header = () => {
                 >
                   <a
                     className="header__menu-link menu-link"
-                    href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                    href={"/school-astry-test/contact"}
                     title="Par skolu"
                   >
                     <span>Par skolu</span>
@@ -84,7 +84,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2476 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         Ārpusstundu aktivitātes
                       </a>
@@ -92,7 +92,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2477 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         Mūsu vide
                       </a>
@@ -100,7 +100,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2479 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         Atbalsta komanda
                       </a>
@@ -108,7 +108,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2478 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         Dokumenti
                       </a>
@@ -121,7 +121,7 @@ const Header = () => {
                 >
                   <a
                     className="header__menu-link menu-link"
-                    href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                    href={"/school-astry-test/contact"}
                     title="Projekti"
                   >
                     <span>Projekti</span>
@@ -138,7 +138,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-3341 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         Erasmus+ KA1
                       </a>
@@ -146,7 +146,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-3371 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         Erasmus+ KA2
                       </a>
@@ -154,7 +154,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-3393 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         UNESKO
                       </a>
@@ -162,7 +162,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-3394 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         ESF projekti
                       </a>
@@ -170,7 +170,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-custom menu-item-object-custom menu-item-3344 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         EKO
                       </a>
@@ -183,7 +183,7 @@ const Header = () => {
                 >
                   <a
                     className="header__menu-link menu-link"
-                    href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                    href={"/school-astry-test/contact"}
                     title="Kontakti"
                   >
                     <span>Kontakti</span>
@@ -200,7 +200,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2480 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         Atbalsta personāls
                       </a>
@@ -208,7 +208,7 @@ const Header = () => {
                     <li className="header__submenu-item menu-item menu-item-type-post_type menu-item-object-page menu-item-2481 menu-item menu-link ">
                       <a
                         className="header__link "
-                        href={import.meta.env.PUBLIC_CONTACT_PAGE_URL}
+                        href={"/school-astry-test/contact"}
                       >
                         Bibliotēka
                       </a>
