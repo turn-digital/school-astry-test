@@ -1,7 +1,6 @@
-import { useState, useRef, useEffect } from "preact/hooks";
+import React, { useState, useRef, useEffect } from "react";
 import { sendContactForm } from "../../services/index";
 import Logo from "../../images/schoolio-logo.png";
-import "../../styles/style.scss";
 
 const ContactForm = () => {
   const [message, setMessage] = useState("");
@@ -19,110 +18,112 @@ const ContactForm = () => {
       setMessage("Something went wrong! Please try again");
     }
   };
+
   let schoolName = "";
+
   useEffect(() => {
-    schoolName = window.host;
+    schoolName = window.location.host;
   }, []);
 
   return (
-    <main class="wrapper contacts-form">
-      <section class="contacts-form__block">
-        <h1 class="contacts-form__head">
+    <main className="wrapper contacts-form">
+      <section className="contacts-form__block">
+        <h1 className="contacts-form__head">
           Vai šī ir mūsu skolas jaunā mājas lapa?
         </h1>
-        <p class="contacts-form__text">
+        <p className="contacts-form__text">
           Tā var kļūt trīs dienu laikā par 50/Eur mēnesī bez izstrādes izmaksām.
           Katra skola ir pelnījusi tīmekļvietni, ar kuru var lepoties!{" "}
         </p>
         <a
-          class="contacts-form__button contacts-form__button--arrow"
+          className="contacts-form__button contacts-form__button--arrow"
           aria-label="Ko tālāk?"
           href="#form"
         >
           Ko tālāk?
         </a>
       </section>
-      <section class="contacts-form__block">
+      <section className="contacts-form__block">
         <ul>
-          <li class="contacts-form__point">
-            <h3 class="contacts-form__subtitle">
+          <li className="contacts-form__point">
+            <h3 className="contacts-form__subtitle">
               Viens risinājums piekļūstamības prasībām
             </h3>
-            <p class="contacts-form__text">
+            <p className="contacts-form__text">
               Atbilstība VARAM noteiktajām vadlīnijām un pieejama cilvēkiem ar
               ierobežojumiem
             </p>
           </li>
-          <li class="contacts-form__point">
-            <h3 class="contacts-form__subtitle">Paredzamas izmaksas</h3>
-            <p class="contacts-form__text">
+          <li className="contacts-form__point">
+            <h3 className="contacts-form__subtitle">Paredzamas izmaksas</h3>
+            <p className="contacts-form__text">
               Nav izstrādes maksas, tikai uzturēšana. 50 eur mēnesī.
             </p>
           </li>
-          <li class="contacts-form__point">
-            <h3 class="contacts-form__subtitle">
+          <li className="contacts-form__point">
+            <h3 className="contacts-form__subtitle">
               Saturu ievietošana tik viegla kā Facebook
             </h3>
-            <p class="contacts-form__text">
+            <p className="contacts-form__text">
               Ērta satura ievadīšana. Katram pa spēkam. Vienmēr aktuāls saturs,
               jo to var ievietot jebkurš.
             </p>
           </li>
         </ul>
       </section>
-      <section class="contacts-form__box">
-        <h2 class="contacts-form__title">
+      <section className="contacts-form__box">
+        <h2 className="contacts-form__title">
           Vairākas skolas jau izvēlas Schoolio platformu!
         </h2>
-        <ul class="contacts-form__list">
-          <li class="contacts-form__item">
+        <ul className="contacts-form__list">
+          <li className="contacts-form__item">
             <a
-              class="contacts-form__link"
+              className="contacts-form__link"
               aria-label="Ozolnieku vidusskola"
               href="https://www.salgalesmms.lv/"
             >
               Ozolnieku vidusskola
             </a>
           </li>
-          <li class="contacts-form__item">
+          <li className="contacts-form__item">
             <a
-              class="contacts-form__link"
+              className="contacts-form__link"
               aria-label="Salgales mūzikas un mākslas skola"
               href="https://www.salgalesmms.lv/"
             >
               Salgales mūzikas un mākslas skola
             </a>
           </li>
-          <li class="contacts-form__item">
+          <li className="contacts-form__item">
             <a
-              class="contacts-form__link"
+              className="contacts-form__link"
               aria-label="Ozolnieku vidusskola"
               href="https://www.salgalesmms.lv/"
             >
               Ozolnieku vidusskola
             </a>
           </li>
-          <li class="contacts-form__item">
+          <li className="contacts-form__item">
             <a
-              class="contacts-form__link"
+              className="contacts-form__link"
               aria-label="Salgales mūzikas un mākslas skola"
               href="https://www.salgalesmms.lv/"
             >
               Salgales mūzikas un mākslas skola
             </a>
           </li>
-          <li class="contacts-form__item">
+          <li className="contacts-form__item">
             <a
-              class="contacts-form__link"
+              className="contacts-form__link"
               aria-label="Ozolnieku vidusskola"
               href="https://www.salgalesmms.lv/"
             >
               Ozolnieku vidusskola
             </a>
           </li>
-          <li class="contacts-form__item">
+          <li className="contacts-form__item">
             <a
-              class="contacts-form__link"
+              className="contacts-form__link"
               aria-label="Salgales mūzikas un mākslas skola"
               href="https://www.salgalesmms.lv/"
             >
@@ -131,17 +132,21 @@ const ContactForm = () => {
           </li>
         </ul>
       </section>
-      <section class="container max-w-2xl text-center">
-        <div class="contacts-form__box">
-          <h2 class="contacts-form__title">Ko darīt tālāk?</h2>
-          <p class="contacts-form__text">
+      <section className="container max-w-2xl text-center">
+        <div className="contacts-form__box">
+          <h2 className="contacts-form__title">Ko darīt tālāk?</h2>
+          <p className="contacts-form__text">
             Sūti informātikas skolotājam vai atbildīgajam par mājaslapu, jo tava
             mājaslapa var izskatīties šādi!
           </p>
-          <a class="contacts-form__button" aria-label="Dalīties" href="#form">
+          <a
+            className="contacts-form__button"
+            aria-label="Dalīties"
+            href="#form"
+          >
             Dalīties
           </a>
-          <p class="contacts-form__text contacts-form__text--margin">
+          <p className="contacts-form__text contacts-form__text--margin">
             Ievadi savu e-pasta adresi un mēs ar tevi sazināsiemies tuvāko dienu
             laikā
           </p>
@@ -154,20 +159,20 @@ const ContactForm = () => {
               id="form"
               ref={formRef}
               onSubmit={submitContact}
-              class="contacts-form__form"
+              className="contacts-form__form"
             >
-              <label for="email" class="contacts-form__text">
+              <label htmlFor="email" className="contacts-form__text">
                 E-pasts
               </label>
               <input
                 id="email"
                 required
                 type={"email"}
-                class="contacts-form__input"
+                className="contacts-form__input"
               />
 
               <button
-                class="contacts-form__button"
+                className="contacts-form__button"
                 aria-label="submit"
                 type="submit"
               >
@@ -175,7 +180,7 @@ const ContactForm = () => {
               </button>
             </form>
           )}
-          <img class="contacts-form__img" src={Logo} alt="schoolio logo" />
+          <img className="contacts-form__img" src={Logo} alt="schoolio logo" />
         </div>
       </section>
     </main>
